@@ -1,0 +1,99 @@
+.offer
+  padding-bottom: 96px
+  &-wrapper
+    display: flex
+    margin-top: -214px
+    overflow: hidden
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+    border-radius: 16px
+    background: #ffffff
+  &-img
+    position: relative
+    flex-basis: 50%
+    &__image
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      height: 100%
+      width: 100%
+      object-fit: cover
+
+  &-description
+    flex-basis: 50%
+    padding: 32px 48px 32px 32px
+    &__offer
+      display: inline-block
+      padding: 6px 12px
+      margin-bottom: 16px
+      color: $green-color
+      background: #EBF7F2
+      border-radius: 50px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+
+    &__title
+      color: $title-color
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 31px
+      line-height: 48px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &__text
+      max-width: 478px
+      margin-bottom: 43px
+      color: $text-color
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+
+.verified-autor
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  &__profile
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    margin-right: 12px
+  &__bio
+    display: flex
+    flex-wrap: wrap
+  &__name
+    flex-basis: 100%
+    margin-bottom: 2px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $title-color
+  &__flag
+    display: flex
+    align-items: center
+    color: $text-color
+    font-family: Open Sans
+    font-style: italic
+    font-weight: normal
+    font-size: 14px
+    line-height: 19px
+    & img
+      width: 16px
+      height: 16px
+      margin-right: 8px
+  &__date
+    color: $text-color
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
