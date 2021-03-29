@@ -6,12 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение шрифтов -->
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Ehua - Новости</title>
   </head>
   <body>
-    
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo header-logo">
+            <a href="index.html" class="logo__link">
+              <img src="img/logo.svg" alt="Логотип: Ehua" class="logo__img" />
+            </a>
+          </div>
+          <!-- /.header-logo -->
+          <nav class="nav header-nav">
+            <ul class="header-nav__list">
+              <li><a href="#" class="header-nav__link">Домой</a></li>
+              <li>
+                <a href="#" class="header-nav__link header-nav__link-arrow"
+                  >Лендинги</a
+                >
+                <ul class="header-nav__list header-nav__list-active">
+                  <li><a href="#" class="header-nav__link">Ссылка1</a></li>
+                  <li><a href="#" class="header-nav__link">Ссылка2</a></li>
+                  <li><a href="#" class="header-nav__link">Ссылка3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="header-nav__link header-nav__link-arrow"
+                  >Страницы</a
+                >
+                <ul class="header-nav__list header-nav__list-active">
+                  <li><a href="#" class="header-nav__link">Ссылка1</a></li>
+                  <li><a href="#" class="header-nav__link">Ссылка2</a></li>
+                  <li><a href="#" class="header-nav__link">Ссылка3</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="header-nav__link">Помощь</a></li>
+            </ul>
+            <button class="button header-button">Получить</button>
+          </nav>
+          <!-- /.nav header-nav -->
+        </div>
+        <!-- /.header-wrapper -->
+        <main class="main">
+          <h1 class="title main-title">Отдел новостей</h1>
+          <!-- /.main-title -->
+          <div class="main-wrapper">
+            <div class="main-search">
+            <img src="img/header/search.svg" alt="icon: Поиск" class="main-search__img" />
+            <form action="#" class="main-search__form">
+              <input
+                type="text"
+                class="main-search__input"
+                placeholder="Поиск постов"
+              />
+              <button class="blue-button main-search__button">Поиск</button>
+            </form>
+          </div>
+          <!-- /.main-search -->
+          <div class="main-tags">
+            <span class="main-tags__title">Популярные Тэги :</span>
+            <span class="main-tags__item">Design</span>
+            <span class="main-tags__item">User Experience</span>
+            <span class="main-tags__item">User Interfaces</span>
+          </div>
+          <!-- /.main-tags -->
+          </div>
+          <!-- /.main-wrapper -->
+        </main>
+        <!-- /.main -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
