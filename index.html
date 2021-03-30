@@ -7,12 +7,16 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
     <!-- Подключение шрифтов -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Подключение слайдера -->
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Ehua - Новости</title>
   </head>
@@ -147,7 +151,7 @@
             Мы делимся общими тенденциями, стратегическими идеями, мнениями,
             короткими и длинными историями команды, стоящей за компанией.
           </p>
-          <button class="section-button popular-button">
+          <a href="#" class="section-button popular-button">
             Смотреть все
             <span
               ><img
@@ -155,7 +159,7 @@
                 alt="icon: Смотреть все"
                 class="section-button__arrow"
             /></span>
-          </button>
+          </a>
         </div>
         <!-- /.popular-description -->
         <div class="section-wrapper popular-wrapper">
@@ -239,7 +243,7 @@
           <p class="section-text last-text">
             Вот чем мы занимались в последнее время.
           </p>
-          <button class="section-button last-button">
+          <a href="#" class="section-button last-button">
             Смотреть все
             <span
               ><img
@@ -247,12 +251,16 @@
                 alt="icon: Смотреть все"
                 class="section-button__arrow"
             /></span>
-          </button>
+          </a>
         </div>
         <!-- /.last-description -->
         <div class="section-wrapper popular-wrapper">
           <div class="section-item last-item">
-            <img src="img/last/last-item-1.png" alt="" class="section-item__img last-item__img">
+            <img
+              src="img/last/last-item-1.png"
+              alt=""
+              class="section-item__img last-item__img"
+            />
             <h3 class="section-item__title last-item__title">Будущее Работы</h3>
             <p class="section-item__text last-item__text">
               Большинство людей будут работать на рабочих местах, которых
@@ -280,7 +288,11 @@
             </div>
           </div>
           <div class="section-item last-item">
-            <img src="img/last/last-item-2.png" alt="" class="section-item__img last-item__img">
+            <img
+              src="img/last/last-item-2.png"
+              alt=""
+              class="section-item__img last-item__img"
+            />
             <h3 class="section-item__title last-item__title">Будущее Данных</h3>
             <p class="section-item__text last-item__text">
               Благодаря нескончаемым объемам данных и количеству инсайтов
@@ -307,12 +319,17 @@
             </div>
           </div>
           <div class="section-item last-item">
-            <img src="img/last/last-item-3.png" alt="" class="section-item__img last-item__img">
+            <img
+              src="img/last/last-item-3.png"
+              alt=""
+              class="section-item__img last-item__img"
+            />
             <h3 class="section-item__title last-item__title">
               Будущее Обучения
             </h3>
             <p class="section-item__text last-item__text">
-              Постоянная способность учиться будет на самых важных <br>навыках.
+              Постоянная способность учиться будет на самых важных
+              <br />навыках.
             </p>
             <div class="verified-autor">
               <div class="verified-autor__profile">
@@ -341,8 +358,186 @@
       <!-- /.container -->
     </section>
     <!-- /.last -->
+    <section class="example">
+      <div class="container">
+        <h2 class="section-title example-title">Примеры из практики</h2>
+        <div class="section-description example-description">
+          <p class="section-text example-text">
+            Вот чем мы занимались в последнее время.
+          </p>
+          <a href="#" class="section-button example-button">
+            Смотреть все
+            <span
+              ><img
+                src="img/section-arrow.svg"
+                alt="icon: Смотреть все"
+                class="section-button__arrow"
+            /></span>
+          </a>
+          <!-- If we need navigation buttons -->
+          <div class="example-btn example-btn-prev"></div>
+          <div class="example-btn example-btn-next"></div>
+        </div>
+        <!-- /.last-description -->
+
+        <!-- Slider main container -->
+        <div class="swiper-container example__swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="example-wrapper">
+                <div class="offer-img">
+                  <img
+                    src="img/example/example-card-1.png"
+                    alt="image: Реклама"
+                    class="offer-img__image"
+                  />
+                </div>
+                <!-- /.offer-img -->
+                <div class="offer-description">
+                  <span
+                    class="offer-description__offer example-offer-description__offer"
+                    >Предложение</span
+                  >
+                  <h2 class="offer-description__title">
+                    Дешевые Авиабилеты -<br />Отличный Способ Сэкономить
+                  </h2>
+                  <p class="offer-description__text">
+                    В этом цифровом поколении, где информацию можно легко
+                    получить за секунды, визитки ...
+                  </p>
+                  <div class="verified-autor">
+                    <div class="verified-autor__profile">
+                      <img
+                        src="img/virifi/verifi-avatar-1.png"
+                        alt="avatar: Автор поста"
+                        class="verified-autor__avatar"
+                      />
+                      <div class="verified-autor__bio">
+                        <span class="verified-autor__name">Viola Manisa</span>
+                        <span class="verified-autor__flag">
+                          <img
+                            src="img/verifi.svg"
+                            alt="icon: Проверенный автор"
+                          />
+                          <span>Verified writer</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="verified-autor__date">02 May</div>
+                  </div>
+                  <!-- /.verified-autor -->
+                </div>
+                <!-- /.offer-description -->
+              </div>
+              <!-- /.example-wrapper -->
+            </div>
+            <div class="swiper-slide">
+              <div class="example-wrapper">
+                <div class="offer-img">
+                  <img
+                    src="img/example/example-card-2.png"
+                    alt="image: Реклама"
+                    class="offer-img__image"
+                  />
+                </div>
+                <!-- /.offer-img -->
+                <div class="offer-description">
+                  <span
+                    class="offer-description__offer example-offer-description__offer"
+                    >Предложение</span
+                  >
+                  <h2 class="offer-description__title">
+                    Дешевые Авиабилеты -<br />Отличный Способ Сэкономить
+                  </h2>
+                  <p class="offer-description__text">
+                    В этом цифровом поколении, где информацию можно легко
+                    получить за секунды, визитки ...
+                  </p>
+                  <div class="verified-autor">
+                    <div class="verified-autor__profile">
+                      <img
+                        src="img/virifi/verifi-avatar-1.png"
+                        alt="avatar: Автор поста"
+                        class="verified-autor__avatar"
+                      />
+                      <div class="verified-autor__bio">
+                        <span class="verified-autor__name">Viola Manisa</span>
+                        <span class="verified-autor__flag">
+                          <img
+                            src="img/verifi.svg"
+                            alt="icon: Проверенный автор"
+                          />
+                          <span>Verified writer</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="verified-autor__date">02 May</div>
+                  </div>
+                  <!-- /.verified-autor -->
+                </div>
+                <!-- /.offer-description -->
+              </div>
+              <!-- /.example-wrapper -->
+            </div>
+            <div class="swiper-slide">
+              <div class="example-wrapper">
+                <div class="offer-img">
+                  <img
+                    src="img/example/example-card-3.png"
+                    alt="image: Реклама"
+                    class="offer-img__image"
+                  />
+                </div>
+                <!-- /.offer-img -->
+                <div class="offer-description">
+                  <span
+                    class="offer-description__offer example-offer-description__offer"
+                    >Предложение</span
+                  >
+                  <h2 class="offer-description__title">
+                    Дешевые Авиабилеты -<br />Отличный Способ Сэкономить
+                  </h2>
+                  <p class="offer-description__text">
+                    В этом цифровом поколении, где информацию можно легко
+                    получить за секунды, визитки ...
+                  </p>
+                  <div class="verified-autor">
+                    <div class="verified-autor__profile">
+                      <img
+                        src="img/virifi/verifi-avatar-1.png"
+                        alt="avatar: Автор поста"
+                        class="verified-autor__avatar"
+                      />
+                      <div class="verified-autor__bio">
+                        <span class="verified-autor__name">Viola Manisa</span>
+                        <span class="verified-autor__flag">
+                          <img
+                            src="img/verifi.svg"
+                            alt="icon: Проверенный автор"
+                          />
+                          <span>Verified writer</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="verified-autor__date">02 May</div>
+                  </div>
+                  <!-- /.verified-autor -->
+                </div>
+                <!-- /.offer-description -->
+              </div>
+              <!-- /.example-wrapper -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.example -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
