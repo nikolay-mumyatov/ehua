@@ -1,0 +1,102 @@
+.footer-up
+  padding-bottom: 188px
+  background: $footer-color
+  background-position: center
+  max-width: 1438px
+  margin: -2px auto
+  &-wrapper
+    position: relative
+    display: flex
+    justify-content: space-between
+    &-description
+      position: relative
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 237px
+      right: 263px
+      width: 234px
+      height: 200px
+      background: #FFFFFF
+      mix-blend-mode: normal
+      opacity: 0.06
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 52px
+      right: -81px
+      width: 200px
+      height: 200px
+      background: #1565D8
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
+  &__subscribe
+    flex-basis: 50%
+  &__title
+    margin-bottom: 52px
+    margin-top: 65px
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $white-font
+    &-description
+      margin-left: 24px
+      margin-bottom: 12px
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $title-color
+  &__form
+  &__input
+    width: 320px
+    padding: 14px 17px
+    margin-right: 4px
+    border-radius: 8px
+    border: none
+  &__button
+    padding: 16px 54px
+  &__text
+    padding-top: 24px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $text-color
+    &-description
+      max-width: 330px
+      margin-left: 24px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $text-color
+  &__description
+    position: absolute
+    z-index: 1
+    width: 466px
+    top: 8px
+    right: -30px
+    padding: 8px 8px 32px 8px
+    background: #ffffff
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+    border-radius: 16px
+  &__img
+    z-index: 9
+    max-width: 450px
+    object-fit: cover
+    margin-bottom: 28px
+    border-radius: 16px
+  &__wave
+    display: block
+    max-width: 1440px
+    margin: 0 auto
