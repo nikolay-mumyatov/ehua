@@ -1,0 +1,49 @@
+@media (max-width: 1200px)
+  .example
+    &-btn
+      &-prev
+        left: -29px
+        margin-left: 15px
+      &-next
+        right: -27px
+        margin-right: 15px
+
+@media (max-width: 992px)
+  .example
+    &-button
+      display: none
+    &-btn
+      width: 40px
+      height: 40px
+      top: 230px
+
+@media (max-width: 768px)
+  .example
+    &-wrapper
+      flex-wrap: wrap
+    &-btn
+      top: 336px
+      &-prev
+      &-next
+
+@media (max-width: 576px)
+  .example
+    &-btn
+      top: 256px
+
+@media  (min-width: 300px) and (max-width: 480px)
+  .example
+    padding-bottom: 41px
+    &-button
+      &-small
+        margin-top: 28px
+        padding: 8px 17px
+    &-description
+      margin-bottom: 5px
+    &-btn
+      top: 217px
+      transform: translateY(-50%)
+      &-prev
+        left: -23px
+      &-next
+        right: -23px
