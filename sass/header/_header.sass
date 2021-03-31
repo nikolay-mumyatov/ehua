@@ -60,10 +60,31 @@
     font-size: 16px
     line-height: 22px
 
-.logo
-  &__link
-  &__img
-
-.nav
-
-
+.burger
+  position: relative
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  width: 23px
+  height: 18px
+  border: none
+  background-color: transparent
+  padding: 0
+  cursor: pointer
+  &__line
+    width: 22px
+    height: 2px
+    border-radius: 20px
+    background: #ffffff
+    transition: 0.3s all
+    &-active
+      &:first-of-type
+        position: absolute
+        top: 50%
+        transform: rotate(45deg)
+      &:nth-of-type(2)
+        opacity: 0
+      &:last-of-type
+        position: absolute
+        top: 50%
+        transform: rotate(-45deg)

@@ -18,3 +18,17 @@ const swiper = new Swiper('.swiper-container', {
     onlyInViewport: false,
   },
 });
+
+// Burger menu
+
+var menuBtn = document.querySelector(".burger"),
+  burgerLine = document.querySelectorAll(".burger__line");
+
+burgerLine.forEach(function (line) {
+  menuBtn.addEventListener("click", function () {
+    line.classList.toggle("burger__line-active");
+    document
+      .querySelector(".header-nav")
+      .classList.toggle("header-nav__visible");
+  });
+});
