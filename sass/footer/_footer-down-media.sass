@@ -1,0 +1,86 @@
+@media (max-width: 1200px)
+  .footer-down
+    padding-top: 0
+    &-wrapper
+      justify-content: space-around
+      flex-wrap: wrap-reverse
+    &__more
+      padding-right: 10px
+      padding-left: 35px
+
+@media (max-width: 992px)
+  .footer-down
+    padding-top: 0
+    &-wrapper
+      justify-content: space-around
+      flex-wrap: wrap
+    &__text
+      display: inline-block
+      text-align: center
+    &__logo
+      display: none
+      &-small
+        display: block
+    &__more
+      padding-right: 10px
+      padding-left: 35px
+  .footer-bottom
+    &__like
+      display: none
+    &__copy
+      display: none
+
+@media (max-width: 768px)
+  .footer-down
+    padding-top: 80px
+    &__title
+      font-size: 16px
+      line-height: 22px
+    &__link
+      font-size: 14px
+      line-height: 20px
+    &__more
+      padding-right: 0
+      padding-left: 45px
+
+@media (max-width: 576px)
+  .footer
+    &-logo
+      margin-bottom: 14px
+  .footer-down
+    padding-top: 84px
+    padding-bottom: 76px
+    &-wrapper
+      padding-bottom: 34px
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__link
+      font-size: 14px
+      line-height: 20px
+      &:not(last-of-type)
+        margin-bottom: 15px
+    &__text
+      max-width: 290px
+      font-size: 14px
+      line-height: 28px
+      margin-bottom: 22px
+    &__social
+      &-link
+        &:not(:last-child)
+          margin-right: 24px
+    &__item
+      min-width: 45%
+    &__logo
+      margin-left: 10px
+      margin-right: 17px
+    &__company
+      margin-top: 23px
+      margin-right: 0
+    &__more
+      margin-top: 23px
+      padding-right: 0
+      padding-left: 0
+
+// @media  (min-width: 300px) and (max-width: 480px)

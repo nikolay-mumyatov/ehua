@@ -1,0 +1,115 @@
+@media (max-width: 1300px)
+  .footer-up
+    &-wrapper
+      &::before
+        top: 227px
+        right: 24vw
+      &::after
+        right: 1vw
+    &__input
+      width: 308px
+    &__description
+      width: 386px
+      left: 55%
+    &__img
+      max-width: 370px
+    &__wave
+      max-width: 110%
+      margin: 0 1px 0 -5px
+
+@media (max-width: 992px)
+  .footer-up
+    &-wrapper
+      &::before
+        display: none
+      &::after
+        display: none
+    &__subscribe
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      flex-basis: 100%
+    &__title
+      text-align: center
+      font-size: 28px
+    &__text
+      max-width: 600px
+    &__description
+      display: none
+
+@media (max-width: 768px)
+  .footer-up
+    margin: 78px auto
+    margin-bottom: 0
+    padding-bottom: 0
+    &-wrapper
+      &::before
+        display: none
+      &::after
+        display: none
+    &__subscribe
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      flex-basis: 100%
+    &__title
+      text-align: center
+      font-size: 28px
+    &__input
+      width: 100%
+      margin-bottom: 12px
+    &__button
+      width: 100%
+    &__text
+      max-width: 600px
+    &__description
+      display: none
+    &__wave
+      display: none
+
+// @media (max-width: 576px)
+
+@media  (min-width: 325px) and (max-width: 480px)
+  .footer-up
+    &__title
+      margin-top: 72px
+      margin-bottom: 8px
+      max-width: 100%
+      text-align: left
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+
+@media (min-width: 300px) and  (max-width: 324px)
+  .footer-up
+    &__title
+      margin-top: 72px
+      margin-bottom: 8px
+      max-width: 225px
+      text-align: left
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+
+@media  (min-width: 300px) and (max-width: 480px)
+  .footer-up
+    &-wrapper
+      &::before
+        display: none
+      &::after
+        display: none
+    &__subscribe
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      margin-left: 8px
+      flex-basis: 100%
+    &__input
+      width: 98%
+    &__button
+      width: 98%
+      padding: 14px 54px
+    &__text
+      font-size: 14px
+      line-height: 27px
+      padding-top: 0
