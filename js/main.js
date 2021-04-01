@@ -19,6 +19,27 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+// Слайдер страницы articles
+const articlesSlider = new Swiper('.slider-swiper-container', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".slider-btn-next",
+    prevEl: ".slider-btn-prev",
+  },
+
+  autoplay: {
+    delay: 5000,
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+
 // Burger menu
 
 var menuBtn = document.querySelector(".burger"),
