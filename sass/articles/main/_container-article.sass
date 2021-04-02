@@ -1,11 +1,20 @@
 .articles
+  &-main
+    padding: 103px 0 249px 0
+    &__title
+      line-height: 69px
   &-wrapper
+    position: relative
     display: flex
   &-social
+    position: sticky
+    top: 40px
     display: flex
     flex-direction: column
+    align-self: flex-start
     align-items: center
     margin-right: 123px
+    margin-bottom: 88px
     &__title
       margin-bottom: 33px
       font-style: normal
@@ -46,12 +55,16 @@
     color: $title-color
     margin-bottom: 4px
   &__post
-    margin-bottom: 16px
+    margin-bottom: 15px
     font-style: normal
     font-weight: normal
     font-size: 16px
     line-height: 26px
     color: $text-color
+    &-lh
+      line-height: 28px
+    &-br > br
+      display: none
 
   &__line
     display: block
@@ -68,6 +81,7 @@
     &__avatar
     &__bio
     &__name
+      margin-bottom: 5px
     &__flag
     &__date
       font-style: normal
