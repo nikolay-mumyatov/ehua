@@ -19,6 +19,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+
 // Слайдер страницы articles
 const articlesSlider = new Swiper('.slider-swiper-container', {
   // Optional parameters
@@ -40,8 +41,8 @@ const articlesSlider = new Swiper('.slider-swiper-container', {
   },
 });
 
-// Burger menu
 
+// Burger menu
 var menuBtn = document.querySelector(".burger"),
   burgerLine = document.querySelectorAll(".burger__line");
 

@@ -34,24 +34,32 @@
             <ul class="header-nav__list">
               <li><a href="#" class="header-nav__link">Домой</a></li>
               <li>
-                <a href="#" class="header-nav__link header-nav__link-arrow"
-                  >Лендинги</a
-                >
-                <ul class="header-nav__list header-nav__list-active">
-                  <li><a href="#" class="header-nav__link">Ссылка1</a></li>
-                  <li><a href="#" class="header-nav__link">Ссылка2</a></li>
-                  <li><a href="#" class="header-nav__link">Ссылка3</a></li>
-                </ul>
+                <div class="dropdown">
+                  <button
+                    class="dropbtn header-nav__link header-nav__link-arrow"
+                  >
+                    Лендинги
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Функции</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Скидки</a>
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="#" class="header-nav__link header-nav__link-arrow"
-                  >Страницы</a
-                >
-                <ul class="header-nav__list header-nav__list-active">
-                  <li><a href="#" class="header-nav__link">Ссылка1</a></li>
-                  <li><a href="#" class="header-nav__link">Ссылка2</a></li>
-                  <li><a href="#" class="header-nav__link">Ссылка3</a></li>
-                </ul>
+                <div class="dropdown">
+                  <button
+                    class="dropbtn header-nav__link header-nav__link-arrow"
+                  >
+                    Страницы
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Контакты</a>
+                    <a href="#">Дизайн</a>
+                    <a href="#">Темы</a>
+                  </div>
+                </div>
               </li>
               <li><a href="#" class="header-nav__link">Помощь</a></li>
             </ul>
@@ -451,7 +459,9 @@
             </div>
             <!-- /.bonnie -->
             <div class="feedback">
-              <h2 class="articles__title feedback__title place-title">Комментарии</h2>
+              <h2 class="articles__title feedback__title place-title">
+                Комментарии
+              </h2>
               <div class="feedback-comment">
                 <div class="feedback__author">
                   <img
@@ -514,8 +524,8 @@
                 </button>
               </form>
               <button type="submit" class="blue-button feedback__button-down">
-                  Комментировать
-                </button>
+                Комментировать
+              </button>
             </div>
             <!-- /.feedback -->
           </div>
