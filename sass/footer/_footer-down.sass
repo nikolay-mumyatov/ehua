@@ -32,6 +32,8 @@
     font-size: 16px
     line-height: 22px
     cursor: pointer
+    &:hover
+      color: #bddcff
     &:not(last-of-type)
       margin-bottom: 24px
 
@@ -50,6 +52,11 @@
       &:not(:last-child)
         margin-right: 20px
     &-img
+      width: 16px
+      height: 16px
+      fill: $text-color
+      &:hover
+        fill: #bddcff
   &__item
     max-width: 171px
   &__list

@@ -21,6 +21,21 @@
     justify-content: space-between
     align-items: center
     width: 634px
+    &__hover
+      position: relative
+      &::after
+        content: ""
+        display: block
+        margin-top: 2px
+        background-color: #297aec
+        height: 2px
+        width: 0%
+        left: 0
+        position: absolute
+        transition: width 0.2s ease-in-out
+      &:hover
+        &::after
+          width: 100%
     &__list
       display: flex
       align-items: center
@@ -58,6 +73,10 @@
     font-weight: 600
     font-size: 16px
     line-height: 22px
+    &:hover
+      background-color: $blue-color
+    &:active
+      background-color: #155bbe
 
 .burger
   position: relative

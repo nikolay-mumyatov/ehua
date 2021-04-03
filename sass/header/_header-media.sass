@@ -3,7 +3,17 @@
     // max-width: 1440px
     background-size: auto
 
-// @media (max-width: 992px)
+@media (max-width: 992px)
+  .header
+    &-button
+      &:hover
+        background-color: transparent
+      &:active
+        background-color: transparent
+    &-nav
+      &__hover
+        &::after
+          display: none
 
 @media (max-width: 768px)
   .header
