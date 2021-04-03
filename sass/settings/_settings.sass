@@ -2,15 +2,21 @@
   box-sizing: border-box
   margin: 0
   font-family: 'Open Sans', sans-serif
-  // font-family: 'Roboto', sans-serif
 
 .container
   max-width: 1140px
   margin: 0 auto
 
 // Общие стили
+html
+  scroll-behavior: smooth
+
 input
   outline: none
+
+button
+  &:focus
+    outline: none
 
 .button
   cursor: pointer
@@ -21,3 +27,7 @@ input
   border: none
   color: $white-font
   cursor: pointer
+  &:active
+    background-color: #155bbe
+  &:hover
+    box-shadow: 0 0 10px #3789fc

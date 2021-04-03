@@ -33,7 +33,26 @@
 @media (max-width: 800px)
   .articles
     &-social
+      position: static
       display: none
+      margin-bottom: 0
+      &__link
+        &:not(:last-child)
+          margin-right: 22px
+      &__title
+        margin-right: 24px
+  .bonnie
+    margin-bottom: 25px
+    &-articles-social
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-right: 0
+      margin-top: 74px
+      &__list
+        flex-direction: row
+        &:not(:last-child)
+          margin-bottom: 0
 
 @media (max-width: 768px)
   .articles
@@ -68,13 +87,6 @@
 @media (max-width: 576px)
   .articles
     margin-top: 40px
-    &-social
-      margin-bottom: 0
-      &__link
-        &:not(:last-child)
-          margin-right: 22px
-      &__title
-        margin-right: 24px
     &__line
       &-up
         margin-bottom: 11px
@@ -137,18 +149,7 @@
     &-autor
       &__date
         font-size: 12px !important
-  .bonnie
-    margin-bottom: 25px
-    &-articles-social
-      display: flex
-      flex-direction: row
-      align-items: center
-      margin-right: 0
-      margin-top: 74px
-      &__list
-        flex-direction: row
-        &:not(:last-child)
-          margin-bottom: 0
+
   .feedback
     margin-bottom: 2px
     &__author

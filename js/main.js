@@ -54,3 +54,38 @@ burgerLine.forEach(function (line) {
       .classList.toggle("header-nav__visible");
   });
 });
+
+
+// Modal window
+
+let modalWindow = document.querySelector(".modal"),
+  closeBtn = document.querySelector(".modal-close");
+
+// Прослушивание документа на нажатие. Если нажали на элемент с классом .modal-btn то произойдет событие.
+document.addEventListener("click", function (e) {
+  const target = e.target;
+  if (target.matches(".modal-btn")) {
+    modalWindow.classList.toggle("modal-active");
+    $("body").css({"overflow": "hidden"});
+  }
+});
+
+// Закрытие по кнопе ESC
+$(document).keydown(function (eventObject) {
+  if (eventObject.which == 27 && modalWindow.classList.contains('modal-active')){
+    modalWindow.classList.remove("modal-active");
+    $("body").css({"overflow": "visible"});
+  }
+});
+
+closeBtn.addEventListener("click", function () {
+  modalWindow.classList.toggle("modal-active");
+  $("body").css({"overflow": "visible"});
+});
+
+$(document).click(function (e) {
+  if ($(e.target).is(".modal")) {
+    modalWindow.classList.toggle("modal-active");
+    $("body").css({"overflow": "visible"});
+  }
+});

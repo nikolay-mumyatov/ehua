@@ -1,4 +1,7 @@
-// @media (max-width: 1200px)
+@media (max-width: 1400px)
+  .header
+    // max-width: 1440px
+    background-size: auto
 
 // @media (max-width: 992px)
 
@@ -6,16 +9,22 @@
   .header
     padding: 42px 10px 0px
     &-wrapper
+      background: $title-color
       position: fixed
       z-index: 999
-      top: 19px
+      padding-left: 24px
+      padding-top: 20px
+      padding-bottom: 20px
+      top: 0
+      left: 0
+      right: 0
       margin: auto
       width: 100%
     &-nav
       visibility: hidden
       position: fixed
       background: $title-color
-      z-index: 99
+      z-index: 999
       height: 100%
       width: 100%
       top: 0
@@ -34,6 +43,7 @@
         &:not(:last-child)
           margin-bottom: 40px
       &__link
+        font-size: 20px
       &__visible
         visibility: visible
         transition: 0.3s all
@@ -41,11 +51,23 @@
   .burger
     display: flex
     z-index: 9999
-    margin-right: 50px
+    margin-right: 24px
   .logo
     &__img
       width: 77px
       height: 24px
+
+  .dropbtn
+    background-color: transparent
+    color: $white-font
+    padding: 3px
+    border: none
+
+  .dropdown
+    &:hover
+      .dropdown-content
+        display: flex
+        left: -60%
 
 @media (max-width: 576px)
   .header

@@ -21,7 +21,7 @@
     <title>Ehua - Все статьи</title>
   </head>
   <body>
-    <header class="header header-articles">
+    <header class="header header-articles" id="up">
       <div class="container">
         <div class="header-wrapper">
           <div class="logo header-logo">
@@ -63,7 +63,7 @@
               </li>
               <li><a href="#" class="header-nav__link">Помощь</a></li>
             </ul>
-            <button class="button header-button">Получить</button>
+            <button class="button header-button modal-btn">Получить</button>
           </nav>
           <!-- /.nav header-nav -->
           <button class="burger">
@@ -777,6 +777,65 @@
       <!-- /.footer-down -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal-wrapper">
+        <h3 class="modal-title">Получить новости</h3>
+        <form action="send.php" method="POST" class="form modal-form">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Ваше имя*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            class="modal__input"
+            placeholder="Ваш номер телефона*"
+            name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="modal__input"
+            placeholder="Ваш Email*"
+            name="email"
+            required
+          />
+          <textarea
+            name="modal__text"
+            cols="30"
+            rows="10"
+            class="modal__text"
+            placeholder="Сообщение"
+          ></textarea>
+          <div class="modal-submit">
+            <button class="blue-button modal__submit">Отправить</button>
+            <span class="modal__footnote">* Обязательные поля</span>
+          </div>
+        </form>
+        <button class="modal-close">
+          <img
+            src="img/modal/close.svg"
+            alt="icon: button to close"
+            class="close"
+          />
+        </button>
+        <!-- /.modal-form -->
+      </div>
+      <!-- /.modal-wrapper -->
+    </div>
+    <!-- /.modal -->
+    <button class="button-up">
+      <a href="#up" class="button-up__link">
+        <img
+          src="img/footer/up-arrow.svg"
+          alt="Кнопка наверх"
+          class="button-up__img"
+        />
+      </a>
+    </button>
+    <!-- /.button-up -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
