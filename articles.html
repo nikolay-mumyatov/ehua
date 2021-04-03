@@ -32,7 +32,9 @@
           <!-- /.header-logo -->
           <nav class="nav header-nav">
             <ul class="header-nav__list">
-              <li><a href="#" class="header-nav__link">Домой</a></li>
+              <li>
+                <a href="#" class="header-nav__link header-nav__hover">Домой</a>
+              </li>
               <li>
                 <div class="dropdown">
                   <button
@@ -61,7 +63,11 @@
                   </div>
                 </div>
               </li>
-              <li><a href="#" class="header-nav__link">Помощь</a></li>
+              <li>
+                <a href="#" class="header-nav__link header-nav__hover"
+                  >Помощь</a
+                >
+              </li>
             </ul>
             <button class="button header-button modal-btn">Получить</button>
           </nav>
@@ -92,32 +98,24 @@
             <span class="articles-social__title">Share</span>
             <div class="articles-social__list">
               <a href="https://twitter.com" class="articles-social__link">
-                <img
-                  src="img/articles/articles-social/twitter.svg"
-                  alt="link: Twitter.com"
-                  class="articles-social__img"
-                />
+                <svg class="articles-social__img">
+                  <use xlink:href="img/articles/articles-social/articles-sprite.svg#twitter"></use>
+                </svg>
               </a>
               <a href="https://www.facebook.com" class="articles-social__link">
-                <img
-                  src="img/articles/articles-social/facebook.svg"
-                  alt="link: Facebook.com"
-                  class="articles-social__img"
-                />
+                <svg class="articles-social__img">
+                  <use xlink:href="img/articles/articles-social/articles-sprite.svg#facebook"></use>
+                </svg>
               </a>
               <a href="https://www.linkedin.com" class="articles-social__link">
-                <img
-                  src="img/articles/articles-social/linkedin.svg"
-                  alt="link: Linkedin.com"
-                  class="articles-social__img"
-                />
+                <svg class="articles-social__img">
+                  <use xlink:href="img/articles/articles-social/articles-sprite.svg#linkedin"></use>
+                </svg>
               </a>
               <a href="https://www.instagram.com" class="articles-social__link">
-                <img
-                  src="img/articles/articles-social/instagram.svg"
-                  alt="link: Instagram.com"
-                  class="articles-social__img"
-                />
+                <svg class="articles-social__img">
+                  <use xlink:href="img/articles/articles-social/articles-sprite.svg#instagram"></use>
+                </svg>
               </a>
             </div>
           </div>

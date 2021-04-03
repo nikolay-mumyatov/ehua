@@ -4,6 +4,9 @@
   .articles
     &-social
       margin-right: 30px
+      &__img
+        &:hover
+          fill: #5A7184
     &-container
       max-width: 700px
   .gallery
@@ -29,6 +32,18 @@
       flex-wrap: wrap
     &__author
       margin-bottom: 20px
+  .slider
+    &-btn
+      &-prev
+        &:active
+          background-color: $blue-color
+        &:hover
+          box-shadow: none
+      &-next
+        &:active
+          background-color: $blue-color
+        &:hover
+          box-shadow: none
 
 @media (max-width: 800px)
   .articles
