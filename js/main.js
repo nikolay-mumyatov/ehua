@@ -49,9 +49,7 @@ var menuBtn = document.querySelector(".burger"),
 burgerLine.forEach(function (line) {
   menuBtn.addEventListener("click", function () {
     line.classList.toggle("burger__line-active");
-    document
-      .querySelector(".header-nav")
-      .classList.toggle("header-nav__visible");
+    document.querySelector(".header-nav").classList.toggle("header-nav__visible");
   });
 });
 
@@ -88,4 +86,49 @@ $(document).click(function (e) {
     modalWindow.classList.toggle("modal-active");
     $("body").css({"overflow": "visible"});
   }
+});
+
+
+// form validation
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "form-validate",
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+      },
+      phone: {
+        required: true,
+        minlength: 17,
+      },
+      text: {
+        required: true,
+      }
+    },
+    messages: {
+      name: {
+        required: "Введите ваше имя.",
+        minlength: jQuery.validator.format("Минимум {0} символа."),
+      },
+      phone: {
+        required: "Введите ваш телефон.",
+        minlength: "Минимум 11 знаков.",
+      },
+      email: {
+        required: "Введите ваш email",
+        email: "Необходимый формат ввода name@domain.com",
+      },
+      text: {
+        required: "Введите ваш комментарий",
+      }
+    },
+  });
+});
+
+
+// phone masc
+$("input[type=tel]").mask("+7 (999) 999-9999");
+$("input[type=tel]").focus(function () {
+  $("input[type=tel]").val("+7");
 });

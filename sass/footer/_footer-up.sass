@@ -56,14 +56,22 @@
       letter-spacing: 0.2px
       color: $title-color
   &__form
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
   &__input
+    display: flex
+    flex-wrap: wrap
     width: 320px
+    min-height: 50px
     padding: 14px 17px
     margin-right: 4px
     border-radius: 8px
     border: none
   &__button
+    min-height: 50px
     padding: 16px 54px
+    margin-left: 10px
   &__text
     padding-top: 24px
     font-style: normal
@@ -95,3 +103,11 @@
     object-fit: cover
     margin-bottom: 28px
     border-radius: 16px
+
+.form
+  &__group
+    width: 320px
+    &-feedback
+      width: 100%
+      display: flex
+      flex-wrap: wrap
