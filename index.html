@@ -820,7 +820,7 @@
               <h2 class="footer-up__title">
                 Получите наши истории на ваш почтовый ящик еженедельно.
               </h2>
-              <form action="send.php" class="form footer-up__form">
+              <form action="send-mail.php" method="POST" class="form footer-up__form">
                 <div class="form__group">
                   <input
                     type="email"
@@ -1059,7 +1059,7 @@
             required
           />
           <textarea
-            name="modal__text"
+            name="message"
             cols="30"
             rows="10"
             class="modal__text"
