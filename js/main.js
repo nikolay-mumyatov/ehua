@@ -44,12 +44,14 @@ const articlesSlider = new Swiper('.slider-swiper-container', {
 
 // Burger menu
 var menuBtn = document.querySelector(".burger"),
-  burgerLine = document.querySelectorAll(".burger__line");
+  burgerLine = document.querySelectorAll(".burger__line"),
+  bodyHidden = document.querySelector("body");
 
 burgerLine.forEach(function (line) {
   menuBtn.addEventListener("click", function () {
     line.classList.toggle("burger__line-active");
     document.querySelector(".header-nav").classList.toggle("header-nav__visible");
+    bodyHidden.classList.toggle("body-hidden");
   });
 });
 

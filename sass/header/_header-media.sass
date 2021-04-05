@@ -19,6 +19,8 @@
 @media (max-width: 768px)
   .header
     padding: 42px 10px 0px
+    &-button
+      margin-top: 15px
     &-wrapper
       background: $title-color
       position: fixed
@@ -49,10 +51,11 @@
       &__list
         flex-direction: column
         & li
-          &:not(:last-child)
-            margin-bottom: 70px
-        &:not(:last-child)
-          margin-bottom: 40px
+          padding: 15px
+          // &:not(:last-child)
+            // margin-bottom: 70px
+        // &:not(:last-child)
+          // margin-bottom: 40px
       &__link
         font-size: 20px
       &__visible
@@ -75,13 +78,22 @@
     border: none
 
   .dropdown
-    &:hover
-      .dropdown-content
-        display: flex
-        left: -60%
+    display: none
+    &-visible
+      display: none
+    &-hide
+      display: block
 
-@media (max-width: 576px)
+@media (max-width: 320px)
   .header
+    background-image: url(../img/header/index-mini.png)
+    &-articles
+      background-image: url(../img/header/articles-mini.png)
     &-logo
 
 // @media  (min-width: 300px) and (max-width: 480px)
+
+
+@media (max-height: 500px)
+  .header-nav__visible
+    overflow-y: scroll

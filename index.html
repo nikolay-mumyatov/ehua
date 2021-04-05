@@ -35,7 +35,13 @@
               <li>
                 <a href="#" class="header-nav__link header-nav__hover">Домой</a>
               </li>
-              <li>
+              <li class="dropdown-hide">
+                <a href="#" class="header-nav__link header-nav__hover">О нас</a>
+              </li>
+              <li class="dropdown-hide">
+                <a href="#" class="header-nav__link header-nav__hover">Контакты</a>
+              </li>
+              <li class="dropdown-visible">
                 <div class="dropdown">
                   <button
                     class="dropbtn header-nav__link header-nav__link-arrow"
@@ -49,7 +55,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="dropdown-visible">
                 <div class="dropdown">
                   <button
                     class="dropbtn header-nav__link header-nav__link-arrow"
@@ -101,10 +107,10 @@
             </div>
             <!-- /.main-search -->
             <div class="main-tags">
-              <span class="main-tags__title">Популярные Тэги :</span>
-              <span class="main-tags__item">Design</span>
-              <span class="main-tags__item">User Experience</span>
-              <span class="main-tags__item">User Interfaces</span>
+              <span href="#" class="main-tags__title">Популярные Тэги :</span>
+              <a href="#" class="main-tags__item">Design</a>
+              <a href="#" class="main-tags__item">User Experience</a>
+              <a href="#" class="main-tags__item">User Interfaces</a>
             </div>
             <!-- /.main-tags -->
           </div>
@@ -118,7 +124,7 @@
 
     <section class="offer">
       <div class="container">
-        <div class="offer-wrapper">
+        <a href="articles.html" class="offer-wrapper">
           <div class="offer-img">
             <img
               src="img/offer/offer-img.png"
@@ -163,7 +169,7 @@
             <!-- /.offer-verified-autor -->
           </div>
           <!-- /.offer-description -->
-        </div>
+        </a>
         <!-- /.offer-wrapper -->
       </div>
       <!-- /.container -->
@@ -445,7 +451,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="example-wrapper">
+              <a href="articles.html" class="example-wrapper">
                 <div class="offer-img">
                   <img
                     src="img/example/example-card-1.png"
@@ -489,11 +495,11 @@
                   <!-- /.verified-autor -->
                 </div>
                 <!-- /.offer-description -->
-              </div>
+              </a>
               <!-- /.example-wrapper -->
             </div>
             <div class="swiper-slide">
-              <div class="example-wrapper">
+              <a href="articles.html" class="example-wrapper">
                 <div class="offer-img">
                   <img
                     src="img/example/example-card-2.png"
@@ -537,11 +543,11 @@
                   <!-- /.verified-autor -->
                 </div>
                 <!-- /.offer-description -->
-              </div>
+              </a>
               <!-- /.example-wrapper -->
             </div>
             <div class="swiper-slide">
-              <div class="example-wrapper">
+              <a href="articles.html" class="example-wrapper">
                 <div class="offer-img">
                   <img
                     src="img/example/example-card-3.png"
@@ -585,7 +591,7 @@
                   <!-- /.verified-autor -->
                 </div>
                 <!-- /.offer-description -->
-              </div>
+              </a>
               <!-- /.example-wrapper -->
             </div>
           </div>
@@ -820,7 +826,11 @@
               <h2 class="footer-up__title">
                 Получите наши истории на ваш почтовый ящик еженедельно.
               </h2>
-              <form action="send-mail.php" method="POST" class="form footer-up__form">
+              <form
+                action="send-mail.php"
+                method="POST"
+                class="form footer-up__form"
+              >
                 <div class="form__group">
                   <input
                     type="email"
@@ -883,12 +893,19 @@
                 <a
                   href="https://www.google.com"
                   class="footer-down__social-link"
+                  target="_blank"
+                  rel="nofollow noopener"
                 >
                   <svg class="footer-down__social-img">
                     <use xlink:href="img/sprite.svg#google"></use>
                   </svg>
                 </a>
-                <a href="https://twitter.com" class="footer-down__social-link">
+                <a
+                  href="https://twitter.com"
+                  class="footer-down__social-link"
+                  target="_blank"
+                  rel="nofollow noopener"
+                >
                   <svg class="footer-down__social-img">
                     <use xlink:href="img/sprite.svg#twitter"></use>
                   </svg>
@@ -896,6 +913,8 @@
                 <a
                   href="https://www.instagram.com"
                   class="footer-down__social-link"
+                  target="_blank"
+                  rel="nofollow noopener"
                 >
                   <svg class="footer-down__social-img">
                     <use xlink:href="img/sprite.svg#instagram"></use>
@@ -904,6 +923,8 @@
                 <a
                   href="https://www.linkedin.com"
                   class="footer-down__social-link"
+                  target="_blank"
+                  rel="nofollow noopener"
                 >
                   <svg class="footer-down__social-img">
                     <use xlink:href="img/sprite.svg#linkedin"></use>
@@ -912,6 +933,8 @@
                 <a
                   href="https://www.youtube.com"
                   class="footer-down__social-link"
+                  target="_blank"
+                  rel="nofollow noopener"
                 >
                   <svg class="footer-down__social-img">
                     <use xlink:href="img/sprite.svg#youtube"></use>
@@ -968,7 +991,7 @@
         </div>
         <!-- /.container -->
         <div class="footer-bottom">
-          <div class="footer-down__logo footer-down__logo-small">
+          <div class="footer-down__logo footer-bottom__logo footer-down__logo-small">
             <div class="logo footer-logo">
               <a href="index.html" class="logo__link">
                 <img src="img/logo.svg" alt="Логотип: Ehua" class="logo__img" />
@@ -978,12 +1001,22 @@
               Создайте современный и креативный веб-сайт с crealand
             </span>
             <div class="footer-down__social">
-              <a href="https://www.google.com" class="footer-down__social-link">
+              <a
+                href="https://www.google.com"
+                class="footer-down__social-link"
+                target="_blank"
+                rel="nofollow noopener"
+              >
                 <svg class="footer-down__social-img">
                   <use xlink:href="img/sprite.svg#google"></use>
                 </svg>
               </a>
-              <a href="https://twitter.com" class="footer-down__social-link">
+              <a
+                href="https://twitter.com"
+                class="footer-down__social-link"
+                target="_blank"
+                rel="nofollow noopener"
+              >
                 <svg class="footer-down__social-img">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
@@ -991,6 +1024,8 @@
               <a
                 href="https://www.instagram.com"
                 class="footer-down__social-link"
+                target="_blank"
+                rel="nofollow noopener"
               >
                 <svg class="footer-down__social-img">
                   <use xlink:href="img/sprite.svg#instagram"></use>
@@ -999,6 +1034,8 @@
               <a
                 href="https://www.linkedin.com"
                 class="footer-down__social-link"
+                target="_blank"
+                rel="nofollow noopener"
               >
                 <svg class="footer-down__social-img">
                   <use xlink:href="img/sprite.svg#linkedin"></use>
@@ -1007,6 +1044,8 @@
               <a
                 href="https://www.youtube.com"
                 class="footer-down__social-link"
+                target="_blank"
+                rel="nofollow noopener"
               >
                 <svg class="footer-down__social-img">
                   <use xlink:href="img/sprite.svg#youtube"></use>
