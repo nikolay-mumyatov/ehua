@@ -65,6 +65,15 @@ window.addEventListener('scroll', function(e) {
   }
 })
 
+// Появление кнопки "наверх"
+window.addEventListener('scroll', function(e) {
+  const up = window.pageYOffset;
+  if (up >= 1500) {
+    $('.button-up').show();
+  } else {
+    $('.button-up').hide();
+  }
+})
 
 // Modal window
 
