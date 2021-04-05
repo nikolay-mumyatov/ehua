@@ -18,6 +18,8 @@
     />
     <!-- Подключение слайдера -->
     <link rel="stylesheet" href="css/style.min.css" />
+    <script src="js/jquerylazy.min.js"></script>
+    <script src="js/lazy.min.js"></script>
     <title>Ehua - Новости</title>
   </head>
   <body>
@@ -39,7 +41,9 @@
                 <a href="#" class="header-nav__link header-nav__hover">О нас</a>
               </li>
               <li class="dropdown-hide">
-                <a href="#" class="header-nav__link header-nav__hover">Контакты</a>
+                <a href="#" class="header-nav__link header-nav__hover"
+                  >Контакты</a
+                >
               </li>
               <li class="dropdown-visible">
                 <div class="dropdown">
@@ -127,7 +131,8 @@
         <a href="articles.html" class="offer-wrapper">
           <div class="offer-img">
             <img
-              src="img/offer/offer-img.png"
+              data-src="img/offer/offer-img.png"
+              src="#"
               alt="image: Реклама"
               class="offer-img__image"
             />
@@ -198,7 +203,8 @@
         <div class="section-wrapper popular-wrapper">
           <a href="articles.html" class="section-card popular-card">
             <img
-              src="img/popular/popular-card-1.png"
+              data-src="img/popular/popular-card-1.png"
+              src="#"
               alt="image: Постер статьи"
               class="section-card__img"
             />
@@ -231,7 +237,8 @@
           </a>
           <a href="articles.html" class="section-card popular-card">
             <img
-              src="img/popular/popular-card-2.png"
+              data-src="img/popular/popular-card-2.png"
+              src="#"
               alt="image: Постер статьи"
               class="section-card__img"
             />
@@ -304,7 +311,8 @@
         <div class="section-wrapper popular-wrapper">
           <a href="articles.html" class="section-item last-item">
             <img
-              src="img/all/all-card-1.png"
+              data-src="img/all/all-card-1.png"
+              src="#"
               alt=""
               class="section-item__img last-item__img"
             />
@@ -338,7 +346,8 @@
           </a>
           <a href="articles.html" class="section-item last-item">
             <img
-              src="img/last/last-item-2.png"
+              data-src="img/last/last-item-2.png"
+              src="#"
               alt=""
               class="section-item__img last-item__img"
             />
@@ -371,7 +380,8 @@
           </a>
           <a href="articles.html" class="section-item last-item">
             <img
-              src="img/last/last-item-3.png"
+              data-src="img/last/last-item-3.png"
+              src="#"
               alt=""
               class="section-item__img last-item__img"
             />
@@ -454,7 +464,8 @@
               <a href="articles.html" class="example-wrapper">
                 <div class="offer-img">
                   <img
-                    src="img/example/example-card-1.png"
+                    data-src="img/example/example-card-1.png"
+                    src="#"
                     alt="image: Реклама"
                     class="offer-img__image"
                   />
@@ -502,7 +513,8 @@
               <a href="articles.html" class="example-wrapper">
                 <div class="offer-img">
                   <img
-                    src="img/example/example-card-2.png"
+                    data-src="img/example/example-card-2.png"
+                    src="#"
                     alt="image: Реклама"
                     class="offer-img__image"
                   />
@@ -550,7 +562,8 @@
               <a href="articles.html" class="example-wrapper">
                 <div class="offer-img">
                   <img
-                    src="img/example/example-card-3.png"
+                    data-src="img/example/example-card-3.png"
+                    src="#"
                     alt="image: Реклама"
                     class="offer-img__image"
                   />
@@ -628,7 +641,8 @@
         <div class="section-wrapper all-wrapper all-wrapper-mb">
           <a href="articles.html" class="section-card popular-card">
             <img
-              src="img/all/all-card-1.png"
+              data-src="img/all/all-card-1.png"
+              src="#"
               alt="image: Постер статьи"
               class="section-card__img"
             />
@@ -661,7 +675,8 @@
           </a>
           <a href="articles.html" class="section-card popular-card">
             <img
-              src="img/all/all-card-2.png"
+              data-src="img/all/all-card-2.png"
+              src="#"
               alt="image: Постер статьи"
               class="section-card__img"
             />
@@ -698,7 +713,8 @@
         <div class="section-wrapper all-wrapper">
           <a href="articles.html" class="section-item last-item">
             <img
-              src="img/all/all-card-3.png"
+              data-src="img/all/all-card-3.png"
+              src="#"
               alt=""
               class="section-item__img last-item__img"
             />
@@ -732,7 +748,8 @@
           </a>
           <a href="articles.html" class="section-item last-item">
             <img
-              src="img/all/all-card-4.png"
+              data-src="img/all/all-card-4.png"
+              src="#"
               alt=""
               class="section-item__img last-item__img"
             />
@@ -765,7 +782,8 @@
           </a>
           <a href="articles.html" class="section-item last-item">
             <img
-              src="img/all/all-card-5.png"
+              data-src="img/all/all-card-5.png"
+              src="#"
               alt=""
               class="section-item__img last-item__img"
             />
@@ -814,7 +832,7 @@
         </div>
       </div>
       <!-- /.container -->
-      <img src="img/footer/Wave.svg" alt="Wave" class="footer-wave" />
+      <img data-src="img/footer/Wave.svg" src="#" alt="Wave" class="footer-wave" />
     </section>
     <!-- /.all -->
 
@@ -853,7 +871,8 @@
             <div class="footer-up-wrapper__description">
               <div class="footer-up__description">
                 <img
-                  src="img/footer/footer-up-img.png"
+                  data-src="img/footer/footer-up-img.png"
+                  src="#"
                   alt="image: Подписка на новости"
                   class="footer-up__img"
                 />
@@ -991,7 +1010,9 @@
         </div>
         <!-- /.container -->
         <div class="footer-bottom">
-          <div class="footer-down__logo footer-bottom__logo footer-down__logo-small">
+          <div
+            class="footer-down__logo footer-bottom__logo footer-down__logo-small"
+          >
             <div class="logo footer-logo">
               <a href="index.html" class="logo__link">
                 <img src="img/logo.svg" alt="Логотип: Ehua" class="logo__img" />
