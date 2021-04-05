@@ -55,6 +55,16 @@ burgerLine.forEach(function (line) {
   });
 });
 
+// Включение фонового цвета шапки при скролле.
+window.addEventListener('scroll', function(e) {
+  const y = window.pageYOffset;
+  if (y >= 25) {
+    $('.header-wrapper').addClass('header-wrapper__scroll');
+  } else {
+    $('.header-wrapper').removeClass('header-wrapper__scroll');
+  }
+})
+
 
 // Modal window
 
