@@ -18,7 +18,7 @@
     />
     <!-- Подключение слайдера -->
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Ehua - Все статьи</title>
+    <title>Ehua - Спасибо!</title>
   </head>
   <body>
     <header class="header-thankyou" id="up">
@@ -35,7 +35,13 @@
               <li>
                 <a href="#" class="header-nav__link header-nav__hover">Домой</a>
               </li>
-              <li>
+              <li class="dropdown-hide">
+                <a href="#" class="header-nav__link header-nav__hover">О нас</a>
+              </li>
+              <li class="dropdown-hide">
+                <a href="#" class="header-nav__link header-nav__hover">Контакты</a>
+              </li>
+              <li class="dropdown-visible">
                 <div class="dropdown">
                   <button
                     class="dropbtn header-nav__link header-nav__link-arrow"
@@ -49,7 +55,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="dropdown-visible">
                 <div class="dropdown">
                   <button
                     class="dropbtn header-nav__link header-nav__link-arrow"
@@ -81,7 +87,7 @@
         </div>
         <!-- /.header-wrapper -->
         <section class="header-thankyou-main">
-          <h1 class="title main-title articles-main__title">Спасибо!</h1>
+          <h1 class="title main-title">Спасибо!</h1>
           <p class="header-thankyou__text">Ваше сообщение отправлено.</p>
           <a href="index.html" class="blue-button header-thankyou__button"
             >Вернуться на главную</a
@@ -94,7 +100,7 @@
     </header>
     <!-- /.header -->
     <footer class="footer">
-      <div class="footer-up">
+      <div class="footer-up footer-up-thankyou">
         <div class="container">
           <div class="footer-up-wrapper">
             <div class="footer-up__subscribe">

@@ -35,7 +35,15 @@
               <li>
                 <a href="#" class="header-nav__link header-nav__hover">Домой</a>
               </li>
-              <li>
+              <li class="dropdown-hide">
+                <a href="#" class="header-nav__link header-nav__hover">О нас</a>
+              </li>
+              <li class="dropdown-hide">
+                <a href="#" class="header-nav__link header-nav__hover"
+                  >Контакты</a
+                >
+              </li>
+              <li class="dropdown-visible">
                 <div class="dropdown">
                   <button
                     class="dropbtn header-nav__link header-nav__link-arrow"
@@ -49,7 +57,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="dropdown-visible">
                 <div class="dropdown">
                   <button
                     class="dropbtn header-nav__link header-nav__link-arrow"
@@ -765,7 +773,9 @@
         </div>
         <!-- /.container -->
         <div class="footer-bottom">
-          <div class="footer-down__logo footer-bottom__logo footer-down__logo-small">
+          <div
+            class="footer-down__logo footer-bottom__logo footer-down__logo-small"
+          >
             <div class="logo footer-logo">
               <a href="index.html" class="logo__link">
                 <img src="img/logo.svg" alt="Логотип: Ehua" class="logo__img" />

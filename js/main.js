@@ -134,3 +134,15 @@ $("input[type=tel]").mask("+7 (999) 999-9999");
 $("input[type=tel]").focus(function () {
   $("input[type=tel]").val("+7");
 });
+
+
+//Плавный скролл страницы
+
+$('a').click(function() {
+    let linkHref = $(this).attr('href'); //Получить значение из АТРИБУТА href
+    let scrollHeight = $(linkHref).offset().top; //Получить значение растояния от элемента до верха страницы
+
+    $('html, body').animate({
+        scrollTop : scrollHeight //Зарегистрированное значение JS
+    }, 500)
+});
