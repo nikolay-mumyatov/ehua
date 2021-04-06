@@ -123,7 +123,7 @@ $(".form").each(function () {
         required: true,
         minlength: 17,
       },
-      text: {
+      feedback: {
         required: true,
       }
     },
@@ -140,7 +140,7 @@ $(".form").each(function () {
         required: "Введите ваш email",
         email: "Необходимый формат ввода name@domain.com",
       },
-      text: {
+      feedback: {
         required: "Введите ваш комментарий",
       }
     },
