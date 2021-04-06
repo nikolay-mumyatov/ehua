@@ -82,11 +82,10 @@
     border: none
 
   .dropdown
-    display: none
-    &-visible
-      display: none
-    &-hide
-      display: block
+    &-content
+      position: static
+      & a:hover
+        color: $white-font
 
 @media (max-width: 320px)
   .header
