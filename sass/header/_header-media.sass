@@ -54,12 +54,10 @@
       justify-content: center
       &__list
         flex-direction: column
+        align-items: flex-start
+        padding-left: 22px
         & li
-          padding: 15px
-          // &:not(:last-child)
-            // margin-bottom: 70px
-        // &:not(:last-child)
-          // margin-bottom: 40px
+          padding: 15px 15px 15px 0
       &__link
         font-size: 20px
       &__visible
@@ -80,6 +78,7 @@
     color: $white-font
     padding: 3px
     border: none
+    padding-left: 0
 
   .dropdown
     &-content
